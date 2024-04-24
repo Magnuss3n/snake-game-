@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Luckiest Guy";
+}
+
+body,
+.snake {
+    background: linear-gradient(to bottom, #ff7070, #88be0b);
+}
+
+#game-board {
+    position: relative;
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
+
+.game-border-1 {
+    border: #ffffff solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #ffffff;
+}
+
+.game-border-2 {
+    border: #dedaed solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+}
+
+.game-border-3 {
+    border: #d70015 solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #000000;
+}
+
+#instruction-text {
+    position: absolute;
+    bottom: -04px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 67%;
+    color: #167b20;
+    text-align: center;
+    width: 400px;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: #4c5435;
+}
+
+#score,
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0px;
+}
+
+#highScore {
+    color: #060057;
+    display: none;
+}
+
+.snake-logo {
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.game-border-3,
+#logo {
+    background-color: #c4cfa3;
+}
+
+.snake {
+    border: #5a5a5a 1px dotted;
+}
+
+.food {
+    background-color: #753838;
+    border: #999 5px solid;
+}
+
+.snake-logo {
+    position: absolute;
+}
